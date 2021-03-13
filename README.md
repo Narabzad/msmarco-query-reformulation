@@ -1,4 +1,4 @@
-# Matches Made in Heaven: Toolkit and Large-Scale Datasets forSupervised Query Reformulation
+# Matches Made in Heaven: Toolkit and Large-Scale Datasets for Supervised Query Reformulation
 
 With the increasing importance of the query reformulation task,various researchers have already offered different strategies to collectground-truth query translation pairs. The objective of our work is to present a standard approach forgenerating large-scale query pair collections that can be used fortraining supervised query reformulation techniques. To generate a ground-truth query reformulation dataset, We propose a toolkit to first train a transformer architecture and learn the associations between the relevance judgement documents of each query and the query itself. Then, the trained transformer is exploited to generate queries from theset of relevant judgment documents associated with each query. The generated queries are then evaluated based on their effectiveness, e.g.,map or mrr, and the most effective queries are chosen to be pairedwith the original query. 
 
@@ -24,6 +24,7 @@ For instance :
 676	1400mm to inches	0.0	convert 1400 mm to inches	1.0
 15	 The ABO blood types are examples of	0.0303	blood type system in humans examples	1.0
 ```
+ ### Replicating the results
  
 To replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
 
