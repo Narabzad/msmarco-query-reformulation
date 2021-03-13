@@ -50,7 +50,7 @@ QueriesRanked: 188398
 #####################
 ```
 
-6. You may evaluate the MAP with the following commands:
+ You may also evaluate the MAP with the following commands:
 ```
 python anserini/tools/scripts/msmarco/convert_msmarco_to_trec_run.py \
  --input runs/run.diamond.train.tsv \
