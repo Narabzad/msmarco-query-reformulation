@@ -35,7 +35,16 @@ QueriesRanked: 188398
 
 6. You may evaluate the MAP with the following commands:
 ```
-anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.train.tsv runs/run.diamond.train.tsv
+python tools/scripts/msmarco/convert_msmarco_to_trec_run.py \
+ --input runs/run.diamond.train.tsv \
+ --output runs/run.diamond.train.trec
+
+python tools/scripts/msmarco/convert_msmarco_to_trec_qrels.py \
+ --input qrels.train.tsv \
+ --output qrels.train.trec
+ 
+anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.train.trec runs/run.diamond.train.tsv
 ```
 and the output should be:
+
 ``` map  all   1 ```
