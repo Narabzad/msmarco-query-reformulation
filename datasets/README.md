@@ -1,3 +1,5 @@
+#Datasets
+
 The [diamond.tsv](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/diamond.tsv) , [platinum.tsv](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/platinum.tsv) and [gold.tsv](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/gold.tsv) contains the initial query and destination query and their corresponding MAP value when retrieved wth BM25 in the following format: 
 
 ```qid \t initial query \t Map (initial query) \t Target Query \t MAP (Target Query)```
