@@ -68,4 +68,4 @@ It should be noted that the goal of this training step is being able to  generat
 
 ### Query Generation
 
-thus, since the model is not deterministic, now we can generate different queries given a document. We apply the transformer model on the jusged relevant documenrs (qrels) to find out what does the generated queries for relevant  judged documents looks like.  
+The fine tuned T5 is not deterministic, therefore, we can generate a different query each time we run the model on a document. We run the model (N=25) times to generate N queries for each document in the qrels (relevant judged documents). You can generate N queries given any documents and the fine-tuned model by [following here](https://github.com/castorini/docTTTTTquery#predicting-queries-from-documents-t5-inference-with-tensorflow). 
