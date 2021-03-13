@@ -54,3 +54,9 @@ and the output should be:
 ``` map  all   1 ```
 
 ## Query Generation
+
+The overflow of generating the queries are shown in the following Figure. 
+<p align="center">
+    <img src="./workflow.png", width="400", alt="ReQue: Workflow Diagram">
+</p>
+
