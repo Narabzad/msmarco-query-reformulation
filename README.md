@@ -51,7 +51,9 @@ anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.diamond.train.trec ru
 ```
 and the output should be:
 
-``` map  all   1 ```
+``` 
+map                     all     1.0000
+ ```
 
 ## Datasets: Generation
 
