@@ -34,7 +34,7 @@ To replicate the numbers in the table (retrieve and evaluate the Diamond Dataset
 ```
 sh anserini/target/appassembler/bin/SearchMsmarco -hits 1000 -threads 1 \
  -index indexes/msmarco-passage/lucene-index-msmarco \
- -queries diamond.tsv \
+ -queries datasets/queries/Diamond_target.tsv \
  -output runs/run.diamond.train.tsv
 ```
 4. You may evaluate the results on MRR@10 with the folllowing comand :
