@@ -25,7 +25,7 @@ For instance :
 15	 The ABO blood types are examples of	0.0303	blood type system in humans examples	1.0
 ```
  
-For instance , to replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
+To replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
 
 1. Installing [Anserini](https://github.com/castorini/anserini)
 2. [Index MSMARCO passage collection](https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md#data-prep)
