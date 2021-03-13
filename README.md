@@ -38,3 +38,4 @@ QueriesRanked: 188398
 anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.train.tsv runs/run.diamond.train.tsv
 ```
 and the output should be:
+``` map  all   1 ```
