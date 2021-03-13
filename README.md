@@ -24,6 +24,8 @@ For instance :
 676	1400mm to inches	0.0	convert 1400 mm to inches	1.0
 15	 The ABO blood types are examples of	0.0303	blood type system in humans examples	1.0
 ```
+
+More information on ech datasets can be found under [datasets directory](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/).
  ### Replicating the results
  
 To replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
