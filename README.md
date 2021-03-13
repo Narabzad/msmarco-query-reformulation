@@ -28,13 +28,12 @@ python tools/scripts/msmarco/msmarco_passage_eval.py \
  qrels.train.tsv runs/run.diamond.train.tsv
 ```
 and the output should be:
+```
 #####################
-
 MRR @10: 1
-
 QueriesRanked: 188398 
-
 #####################
+```
 
 6. You may evaluate the MAP with the following commands:
 ```
