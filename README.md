@@ -14,18 +14,27 @@ With the increasing importance of the query reformulation task,various researche
 For instance , to replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
 
 1. Installing [Anserini](https://github.com/castorini/anserini)
-2. [Index MSMARCO passage collection] 
-3. you need to set the number of threads and the index directory
+2. [Index MSMARCO passage collection](https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md#data-prep)
+3. you may to may the number of threads and the index directory when following this command
 ```
 sh target/appassembler/bin/SearchMsmarco -hits 1000 -threads 1 \
  -index indexes/msmarco-passage/lucene-index-msmarco \
  -queries diamond.tsv \
- -output runs/run.diamond.dev.small.tsv
+ -output runs/run.diamond.train.tsv
 ```
 4. You may evaluate the results on MRR@10 with the folllowing comand :
 ```
 python tools/scripts/msmarco/msmarco_passage_eval.py \
- collections/msmarco-passage/qrels.dev.small.tsv runs/run.msmarco-passage.dev.small.tsv
+ qrels.train.tsv runs/run.diamond.train.tsv
 ```
-6. You may evaluate the MAP with the following commands:
+and the output should be:
+#####################
+MRR @10: 1
+QueriesRanked: 188398 
+#####################
 
+6. You may evaluate the MAP with the following commands:
+```
+anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.train.tsv runs/run.diamond.train.tsv
+```
+and the output should be:
