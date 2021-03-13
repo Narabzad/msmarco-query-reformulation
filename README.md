@@ -9,9 +9,9 @@ With the increasing importance of the query reformulation task,various researche
 
 |                           | Number of Queries | MAP (Source Query) | MAP (Revised Query) | MAP Improvement % | MRR@10 (Source Query) | MRR@10 (Revised Query) | MRR@10 Improvement % |
 |---------------------------|:-----------------:|:------------------:|:-------------------:|:-----------------:|:---------------------:|:----------------------:|:--------------------:|
-| [Diamond Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/diamond.tsv)  |      188,398      |        0.139       |        1.000        |       619\%       |         0.126         |          1.000         |         690\%        |
-| [Platinum Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/platinum.tsv)|      429,192      |        0.086       |        0.582        |       576\%       |         0.074         |          0.593         |         693\%        |
-| [Gold Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/gold.tsv)    |      502,939      |        0.179       |        0.603        |       236\%       |         0.169         |          0.612         |         260\%        |
+| [Diamond Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/queries/diamond.tsv)  |      188,398      |        0.139       |        1.000        |       619\%       |         0.126         |          1.000         |         690\%        |
+| [Platinum Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/queries/platinum.tsv)|      429,192      |        0.086       |        0.582        |       576\%       |         0.074         |          0.593         |         693\%        |
+| [Gold Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/queries/gold.tsv)    |      502,939      |        0.179       |        0.603        |       236\%       |         0.169         |          0.612         |         260\%        |
  
 For instance , to replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
 
