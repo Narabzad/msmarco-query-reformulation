@@ -17,14 +17,14 @@ For instance , to replicate the numbers in the table (retrieve and evaluate the 
 2. [Index MSMARCO passage collection](https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md#data-prep)
 3. you may to may the number of threads and the index directory when following this command
 ```
-sh target/appassembler/bin/SearchMsmarco -hits 1000 -threads 1 \
+sh anserini/target/appassembler/bin/SearchMsmarco -hits 1000 -threads 1 \
  -index indexes/msmarco-passage/lucene-index-msmarco \
  -queries diamond.tsv \
  -output runs/run.diamond.train.tsv
 ```
 4. You may evaluate the results on MRR@10 with the folllowing comand :
 ```
-python tools/scripts/msmarco/msmarco_passage_eval.py \
+python anserini/tools/scripts/msmarco/msmarco_passage_eval.py \
  qrels.train.tsv runs/run.diamond.train.tsv
 ```
 and the output should be:
@@ -37,11 +37,11 @@ QueriesRanked: 188398
 
 6. You may evaluate the MAP with the following commands:
 ```
-python tools/scripts/msmarco/convert_msmarco_to_trec_run.py \
+python anserini/tools/scripts/msmarco/convert_msmarco_to_trec_run.py \
  --input runs/run.diamond.train.tsv \
  --output runs/run.diamond.train.trec
 
-python tools/scripts/msmarco/convert_msmarco_to_trec_qrels.py \
+python anserini/tools/scripts/msmarco/convert_msmarco_to_trec_qrels.py \
  --input qrels.train.tsv \
  --output qrels.train.trec
  
