@@ -4,7 +4,7 @@ With the increasing importance of the query reformulation task,various researche
 
 ## Datasets: Details and Evaluation
 
- Based on MSMARCO training set, we release three datasets for MSMarco, namely,Diamond,Platinum, and Gold datasets. The details and the corresponding link to queries can be found in this table. Queries were retrieved using [BM25 implementation in Anserini](https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md). All the queries have relevant judged documents that can be found in [MSMARCO website](https://microsoft.github.io/msmarco/). 
+ Based on MSMARCO training set, we release three datasets for MSMarco, namely, Diamond, Platinum, and Gold datasets. The details and the corresponding link to queries can be found in this table. Queries were retrieved using [BM25 implementation in Anserini](https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md). All the queries have relevant judged documents that can be found in [MSMARCO website](https://microsoft.github.io/msmarco/). 
 
 
 |                           | Number of Queries | MAP (Source Query) | MAP (Revised Query) | MAP Improvement % | MRR@10 (Source Query) | MRR@10 (Revised Query) | MRR@10 Improvement % |
