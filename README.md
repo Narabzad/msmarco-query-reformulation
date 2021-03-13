@@ -66,5 +66,6 @@ The trained model is also [available](https://git.uwaterloo.ca/jimmylin/doc2quer
 
 It should be noted that the goal of this training step is being able to  generate  a query that a document can best aswer, given any documents.
 
+### Query Generation
 
 thus, since the model is not deterministic, now we can generate different queries given a document. We apply the transformer model on the jusged relevant documenrs (qrels) to find out what does the generated queries for relevant  judged documents looks like.  
