@@ -20,7 +20,7 @@ qid \t initial query \t Map (initial query) \t Target Query \t MAP (Target Query
 ```
 For instance :
 ```
-6	 Ebolavirus is an enveloped virus, which means	0.0556	what is the name of the outer layer of an ebola virus	1.0
+126720	define scale down	0.0	scale down debt definition	1.0
 676	1400mm to inches	0.0	convert 1400 mm to inches	1.0
 15	 The ABO blood types are examples of	0.0303	blood type system in humans examples	1.0
 ```
