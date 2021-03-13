@@ -44,10 +44,10 @@ python anserini/tools/scripts/msmarco/convert_msmarco_to_trec_run.py \
  --output runs/run.diamond.train.trec
 
 python anserini/tools/scripts/msmarco/convert_msmarco_to_trec_qrels.py \
- --input qrels.train.tsv \
- --output qrels.train.trec
+ --input datasets/qrels.diamond.train.tsv \
+ --output datasets/qrels.diamond.train.trec
  
-anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.train.trec runs/run.diamond.train.tsv
+anserini/tools/eval/trec_eval.9.0.4/trec_eval -m map qrels.diamond.train.trec runs/run.diamond.train.trec
 ```
 and the output should be:
 
