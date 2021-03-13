@@ -29,8 +29,11 @@ python tools/scripts/msmarco/msmarco_passage_eval.py \
 ```
 and the output should be:
 #####################
+
 MRR @10: 1
+
 QueriesRanked: 188398 
+
 #####################
 
 6. You may evaluate the MAP with the following commands:
