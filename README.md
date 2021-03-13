@@ -64,4 +64,7 @@ The overflow of generating the queries are shown in the following Figure which c
 We finetuned T5 transformer in order to generate queries from the documents. To finetune T5 on pairs of query and relevant judged passages of MSMArco, we adopted [DocTTTTQuery] methodology and the [details of the trainig can be found here](https://github.com/castorini/docTTTTTquery#learning-a-new-prediction-model-t5-training-with-tensorflow).
 The trained model is also [available](https://git.uwaterloo.ca/jimmylin/doc2query-data/raw/master/T5-passage/t5-base.zip) if you do not wish to train the model.
 
-The model is trained with the goal of generating  a query that a document can best aswer, given any documents. thus, since the model is not deterministic, now we can generate different queries given a document. We apply the transformer model on the jusged relevant documenrs (qrels) to find out what does the generated queries for relevant  judged documents looks like.  
+It should be noted that the goal of this training step is being able to  generate  a query that a document can best aswer, given any documents.
+
+
+thus, since the model is not deterministic, now we can generate different queries given a document. We apply the transformer model on the jusged relevant documenrs (qrels) to find out what does the generated queries for relevant  judged documents looks like.  
