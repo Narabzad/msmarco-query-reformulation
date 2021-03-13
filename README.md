@@ -13,6 +13,18 @@ With the increasing importance of the query reformulation task,various researche
 | [Platinum Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/queries/platinum.tsv)|      429,192      |        0.086       |        0.582        |       576\%       |         0.074         |          0.593         |         693\%        |
 | [Gold Dataset](https://github.com/Narabzad/msmarco-query-reformulation/blob/main/datasets/queries/gold.tsv)    |      502,939      |        0.179       |        0.603        |       236\%       |         0.169         |          0.612         |         260\%        |
  
+ The dataset files is formatetd in the following : 
+```
+qid \t initial query \t Map (initial query) \t Target Query \t MAP (Target Query)
+
+```
+For instance :
+```
+6	 Ebolavirus is an enveloped virus, which means	0.0556	what is the name of the outer layer of an ebola virus	1.0
+676	1400mm to inches	0.0	convert 1400 mm to inches	1.0
+15	 The ABO blood types are examples of	0.0303	blood type system in humans examples	1.0
+```
+ 
 For instance , to replicate the numbers in the table (retrieve and evaluate the Diamond Dataset) you need to follow these steps: 
 
 1. Installing [Anserini](https://github.com/castorini/anserini)
