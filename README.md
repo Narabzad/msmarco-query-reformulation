@@ -76,7 +76,7 @@ The overflow of generating the queries are shown in the following Figure which c
 </p>
 
 ### Transformer Training 
-We finetuned T5 transformer in order to generate queries from the documents. To finetune T5 on pairs of query and relevant judged passages of MSMArco, we adopted [DocTTTTQuery] methodology and the [details of the trainig can be found here](https://github.com/castorini/docTTTTTquery#learning-a-new-prediction-model-t5-training-with-tensorflow).
+We finetuned T5 transformer in order to generate queries from the documents. To finetune T5 on pairs of query and relevant judged passages of MSMArco, we adopted [DocTTTTQuery](https://github.com/castorini/docTTTTTquery) methodology and the [details of the trainig can be found here](https://github.com/castorini/docTTTTTquery#learning-a-new-prediction-model-t5-training-with-tensorflow).
 The trained model is also [available](https://git.uwaterloo.ca/jimmylin/doc2query-data/raw/master/T5-passage/t5-base.zip) if you do not wish to train the model.
 
 It should be noted that the goal of this training step is being able to  generate  a query that a document can best aswer, given any documents.
