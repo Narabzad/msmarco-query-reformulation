@@ -69,3 +69,5 @@ It should be noted that the goal of this training step is being able to  generat
 ### Query Generation
 
 The fine tuned T5 is not deterministic, therefore, we can generate a different query each time we run the model on a document. We run the model (N=25) times to generate N queries for each document in the qrels (relevant judged documents). You can generate N queries given any documents and the fine-tuned model by [following here](https://github.com/castorini/docTTTTTquery#predicting-queries-from-documents-t5-inference-with-tensorflow). 
+
+Further, we evaluate the desiret evaluation metric on the 25 queries and select the one with the best performance. We consider the best performed queries acroox the N generated queries as the target query. If the target query failed to show any improvemet, we keep the original query (it happens in gold dataset) 
