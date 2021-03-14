@@ -89,3 +89,9 @@ The fine tuned T5 is not deterministic, therefore, we can generate a different q
 
 Further, we evaluate the desired evaluation metric on the 25 queries and select the one with the best performance. The best performed query among the N generated queries is considerd as the target query. If the target query failed to show any improvemet, we keep the original query (it happens in gold dataset). 
 In this case, we measure MAP across all the 25 generated queries and seleect the one with higehst MAP value.
+
+## Authors
+[Negar Arabzadeh](https://github.com/Narabzad), [Amin Bigdeli](https://github.com/aminbigdeli), [shirin Seyedsalehi](https://www.linkedin.com/in/shirin-seyedsalehi/?originalSubdomain=ir), [Morteza Zihayat](https://www.ryerson.ca/information-technology-management/faculty-research/morteza-zihayat/), and [Ebrahim Bagheri](https://www.ee.ryerson.ca/~bagheri/)
+
+
+Laboratory for Systems, Software and Semantics ([LS3](http://ls3.rnet.ryerson.ca/)), Ryerson University, ON, Canada.</sup>
