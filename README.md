@@ -42,7 +42,7 @@ sh anserini/target/appassembler/bin/SearchMsmarco -hits 1000 -threads 1 \
 4. You may evaluate the results on MRR@10 with the folllowing comand :
 ```
 python anserini/tools/scripts/msmarco/msmarco_passage_eval.py \
- qrels.train.tsv runs/run.diamond.train.tsv
+ datasets/qrels/qrels.diamond.train.tsv runs/run.diamond.train.tsv
 ```
 and the output should be:
 ```
