@@ -96,6 +96,6 @@ In this case, we measure MAP across all the 25 generated queries and seleect the
 
 Laboratory for Systems, Software and Semantics ([LS3](http://ls3.rnet.ryerson.ca/)), Ryerson University, ON, Canada.</sup>
 <p align="right">
-    <img src="./ls3.PNG", width="400", alt="Ls3 logo">
+    <img src="./ls3.PNG", width="200", alt="Ls3 logo">
 </p>
 
