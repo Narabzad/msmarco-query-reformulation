@@ -1,5 +1,6 @@
 # Matches Made in Heaven: Toolkit and Large-Scale Datasets for Supervised Query Reformulation
 [Link to Paper](http://ls3.rnet.ryerson.ca/wiki/images/a/ab/Matches-made-in-heaven.pdf)
+
 With the increasing importance of the query reformulation task,various researchers have already offered different strategies to collectground-truth query translation pairs. The objective of our work is to present a standard approach forgenerating large-scale query pair collections that can be used fortraining supervised query reformulation techniques. To generate a ground-truth query reformulation dataset, We propose a toolkit to first train a transformer architecture and learn the associations between the relevance judgement documents of each query and the query itself. Then, the trained transformer is exploited to generate queries from theset of relevant judgment documents associated with each query. The generated queries are then evaluated based on their effectiveness, e.g.,map or mrr, and the most effective queries are chosen to be pairedwith the original query. 
 
 ## Datasets: Details and Evaluation
